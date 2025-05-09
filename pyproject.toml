@@ -3,18 +3,18 @@ name = "cosmic-soup"
 version = "0.1.0"
 description = "Cosmic Soup is a JAX-powered exploration of emergent life at the boundary of order and chaos."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
+    "ipykernel>=6.29.5",
     "jax>=0.4.30",
     "matplotlib>=3.9.4",
     "numpy>=2.0.2",
     "streamlit>=1.45.0",
+    "watchdog>=6.0.0",
 ]
 
 [dependency-groups]
-dev = [
-    "pytest>=8.3.5",
-]
+dev = ["pytest>=8.3.5"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
